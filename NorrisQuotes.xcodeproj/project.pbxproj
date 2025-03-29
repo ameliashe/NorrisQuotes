@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4E59A12D987D0D00B3BE72 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE4E59A02D987D0D00B3BE72 /* KeychainSwift */; };
 		CE5918FE2D728702006624A9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE5918FD2D728702006624A9 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4E59A12D987D0D00B3BE72 /* KeychainSwift in Frameworks */,
 				CE5918FE2D728702006624A9 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +86,7 @@
 			name = NorrisQuotes;
 			packageProductDependencies = (
 				CE5918FD2D728702006624A9 /* RealmSwift */,
+				CE4E59A02D987D0D00B3BE72 /* KeychainSwift */,
 			);
 			productName = NorrisQuotes;
 			productReference = CE46832F2D727ED6005939AF /* NorrisQuotes.app */;
@@ -115,6 +118,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				CE5918FA2D728702006624A9 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				CE4E599F2D987D0D00B3BE72 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CE4683302D727ED6005939AF /* Products */;
@@ -344,6 +348,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CE4E599F2D987D0D00B3BE72 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
 		CE5918FA2D728702006624A9 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
@@ -355,6 +367,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE4E59A02D987D0D00B3BE72 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE4E599F2D987D0D00B3BE72 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
 		CE5918FD2D728702006624A9 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CE5918FA2D728702006624A9 /* XCRemoteSwiftPackageReference "realm-swift" */;
